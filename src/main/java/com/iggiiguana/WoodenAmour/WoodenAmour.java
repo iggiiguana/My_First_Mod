@@ -1,15 +1,21 @@
 package com.iggiiguana.WoodenAmour;
 
+import com.iggiiguana.WoodenAmour.proxy.IProxy;
+import com.iggiiguana.WoodenAmour.refrence.refrence;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "WoodenAmour", name = "Wooden Amour", version = "1.7.2-1.0")
+@Mod(modid = refrence.MOD_ID, name = refrence.MOD_NAME, version = refrence.VERSION)
 public class WoodenAmour
 {
-    @Mod.Instance("WoodenAmour")
+    @Mod.Instance(refrence.MOD_ID)
     public static WoodenAmour instance;
+
+    @SidedProxy(clientSide = refrence.CLIENT_PROXY_CLASS, serverSide = refrence.SERVER_PROXY_CLASS)
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
