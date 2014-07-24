@@ -1,0 +1,21 @@
+[
+{
+  "modid": "WoodenAmour",
+  "name": "Wooden Amour",
+  "description": "Crafting amour out of new materials.",
+  "version": "1.0",
+  "mcversion": "1.7.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "iggiiguana"
+  ],
+  "credits": "Hope you enjoy!",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
