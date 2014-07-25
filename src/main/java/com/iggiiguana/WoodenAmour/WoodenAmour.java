@@ -1,5 +1,6 @@
 package com.iggiiguana.WoodenAmour;
 
+import com.iggiiguana.WoodenAmour.client.gui.GuiFactory;
 import com.iggiiguana.WoodenAmour.handler.ConfigurationHandler;
 import com.iggiiguana.WoodenAmour.proxy.IProxy;
 import com.iggiiguana.WoodenAmour.refrence.refrence;
@@ -9,7 +10,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = refrence.MOD_ID, name = refrence.MOD_NAME, version = refrence.VERSION)
+@Mod(modid = refrence.MOD_ID, name = refrence.MOD_NAME, version = refrence.VERSION, guiFactory = refrence.GUI_FACTORY_CLASS)
 public class WoodenAmour
 {
     @Mod.Instance(refrence.MOD_ID)
