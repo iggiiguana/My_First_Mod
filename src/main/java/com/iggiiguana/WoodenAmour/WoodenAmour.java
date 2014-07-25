@@ -1,5 +1,6 @@
 package com.iggiiguana.WoodenAmour;
 
+import com.iggiiguana.WoodenAmour.handler.ConfigurationHandler;
 import com.iggiiguana.WoodenAmour.proxy.IProxy;
 import com.iggiiguana.WoodenAmour.refrence.refrence;
 import cpw.mods.fml.common.Mod;
@@ -20,7 +21,7 @@ public class WoodenAmour
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
